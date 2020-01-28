@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c1fc2d3-8c81-4262-a204-8b03418f99b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/analysis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/analysis.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CelestialBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CelestialBody.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,33 +18,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WfTvd7ATNNAZoLbWPIQWCLUP4x" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.TestReadBodies">
-    <configuration name="TestBodyConstructorGetters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestBodyConstructorGetters" />
-      <module name="NBody-spring20" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TestUpdate">
     <configuration name="TestCalcDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestCalcDistance" />
       <module name="NBody-spring20" />
@@ -52,15 +39,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestReadBodies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestReadBodies" />
+    <configuration name="TestCalcForceExertedBy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestCalcForceExertedBy" />
       <module name="NBody-spring20" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestReadRadius" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestReadRadius" />
+    <configuration name="TestCalcForceExertedByXY" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestCalcForceExertedByXY" />
+      <module name="NBody-spring20" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCalcNetForceExertedByXY" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestCalcNetForceExertedByXY" />
+      <module name="NBody-spring20" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUpdate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestUpdate" />
       <module name="NBody-spring20" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,12 +69,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestReadBodies" />
-        <item itemvalue="Application.TestReadRadius" />
+        <item itemvalue="Application.TestUpdate" />
+        <item itemvalue="Application.TestCalcNetForceExertedByXY" />
+        <item itemvalue="Application.TestCalcForceExertedByXY" />
+        <item itemvalue="Application.TestCalcForceExertedBy" />
         <item itemvalue="Application.TestCalcDistance" />
-        <item itemvalue="Application.TestBodyConstructorGetters" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -100,5 +114,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1002" y="322" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579921714651">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="1002" y="322" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1579921714651" />
+    <state x="950" y="318" width="403" height="236" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580156293193">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="950" y="318" width="403" height="236" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1580156293193" />
+    <state width="855" height="115" key="GridCell.Tab.0.bottom" timestamp="1580181078465">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="855" height="115" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1580181078465" />
+    <state width="855" height="115" key="GridCell.Tab.0.center" timestamp="1580181078465">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="855" height="115" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1580181078465" />
+    <state width="855" height="115" key="GridCell.Tab.0.left" timestamp="1580181078465">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="855" height="115" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1580181078465" />
+    <state width="855" height="115" key="GridCell.Tab.0.right" timestamp="1580181078465">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="855" height="115" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1580181078465" />
   </component>
 </project>
