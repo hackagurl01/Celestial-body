@@ -24,6 +24,9 @@ public class CelestialBody {
 	 */
 	public CelestialBody(double xp, double yp, double xv,
 			             double yv, double mass, String filename){
+		/*
+		Assign values
+		 */
 		myXPos = xp;
 		myYPos = yp;
 		myXVel = xv;
@@ -33,6 +36,9 @@ public class CelestialBody {
 	}
 
 	public CelestialBody(CelestialBody b){
+		/*
+		Builds constructor
+		 */
 		myXPos = b.getX();
 		myYPos = b.getY();
 		myXVel = b.getXVel();
@@ -40,28 +46,32 @@ public class CelestialBody {
 		myMass = b.getMass();
 		myFileName = b.getName();
 	}
-
+	/*
+	Pulls private values, shielding them
+	 */
 	public double getX() {
+		// Returns X coordinate
 		return myXPos;
 	}
 	public double getY() {
+		// Returns Y coordinate
 		return myYPos;
 	}
 	public double getXVel() {
+		// Returns X velocity
 		return myXVel;
 	}
-	/**
-	 * Return y-velocity of this Body.
-	 * @return value of y-velocity.
-	 */
 	public double getYVel() {
+		// Returns Y velocity
 		return myYVel;
 	}
 	
 	public double getMass() {
+		// Returns Mass
 		return myMass;
 	}
 	public String getName() {
+		// Returns filename
 		return myFileName;
 	}
 
@@ -71,16 +81,19 @@ public class CelestialBody {
 	 * @return distance between this body and b
 	 */
 	private double deltaX(CelestialBody b) {
+		// Change in X pos
 		double dX = b.getX() - myXPos;
 		return dX;
 	}
 
 	private double deltaY(CelestialBody b) {
+		// Change in Y pos
 		double dY = b.getY() - myYPos;
 		return dY;
 	}
 
 	public double calcDistance(CelestialBody b) {
+		// Uses distance formula to calc distance between celestial bodies
 		double dX = deltaX(b);
 		double deltaX_sqr = Math.pow(dX,2);
 
@@ -93,6 +106,7 @@ public class CelestialBody {
 	}
 
 	public double calcForceExertedBy(CelestialBody b) {
+		// Uses force formula to calc force exerted by a celestial body
 		final double G = 6.67*1e-11;
 		double m1 = myMass;
 		double m2 = b.getMass();
@@ -102,6 +116,7 @@ public class CelestialBody {
 	}
 
 	public double calcForceExertedByX(CelestialBody b) {
+		// Vector force exerted in X plane
 		double F = calcForceExertedBy(b);
 		double dX = deltaX(b);
 		double r = calcDistance(b);
@@ -109,6 +124,7 @@ public class CelestialBody {
 		return (F*dX/r);
 	}
 	public double calcForceExertedByY(CelestialBody b) {
+		// Vector force exerted in Y plane
 		double F = calcForceExertedBy(b);
 		double dY = deltaY(b);
 		double r = calcDistance(b);
@@ -117,6 +133,7 @@ public class CelestialBody {
 	}
 
 	public double calcNetForceExertedByX(CelestialBody[] bodies) {
+		// Net force exerted on celestial body by all other bodies in X plane
 		double sumFX = 0.0;
 
 		for (CelestialBody b : bodies) {
@@ -128,6 +145,7 @@ public class CelestialBody {
 	}
 
 	public double calcNetForceExertedByY(CelestialBody[] bodies) {
+		// Net force exerted on celestial body by all other bodies in Y plane
 		double sumFY = 0.0;
 		for(CelestialBody b : bodies) {
 			if (b != this) {
@@ -139,6 +157,7 @@ public class CelestialBody {
 
 	public void update(double deltaT, 
 			           double xforce, double yforce) {
+		// Updates force values for celestial body after every deltaT interval
 		double ax = xforce/getMass();
 		double ay = yforce/getMass();
 
@@ -155,6 +174,7 @@ public class CelestialBody {
 	}
 
 	public void draw() {
-		// TODO: complete method
+		// Draws celestial body
+		StdDraw.picture(myXPos,myYPos, "images/"+myFileName);
 	}
 }
